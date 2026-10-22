@@ -6,6 +6,10 @@
   .footer {grid-area: 3 / span 6;}
 }
 
+hmtl {
+    scroll-behavior: smooth;
+}
+
 body {
     margin-top: 1cm;
     margin-bottom: 1cm;
