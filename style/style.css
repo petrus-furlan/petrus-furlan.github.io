@@ -1,3 +1,11 @@
+@media (min-width: 600px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 2 / span 1;}
+  .footer {grid-area: 3 / span 6;}
+}
+
 body {
     margin-left: 2cm;
     margin-right: 2cm;
@@ -5,6 +13,10 @@ body {
     margin-bottom: 1cm;
     background-color: #fdede4;
     text-align: justify;
+}
+
+header {
+    padding-bottom: 25px;
 }
 
 ul {
