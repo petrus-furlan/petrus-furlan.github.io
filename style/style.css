@@ -7,12 +7,15 @@
 }
 
 body {
-    margin-left: 2cm;
-    margin-right: 2cm;
     margin-top: 1cm;
     margin-bottom: 1cm;
     background-color: #fdede4;
     text-align: justify;
+}
+
+p{
+  margin-left: 2cm;
+  margin-right: 2cm;
 }
 
 header {
@@ -22,6 +25,7 @@ header {
 ul {
   text-align: center;
   list-style-type: none;
+  margin: 0;
   overflow: hidden;
   background-color: #608fc3;
 }
