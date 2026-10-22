@@ -6,10 +6,6 @@
   .footer {grid-area: 3 / span 6;}
 }
 
-hmtl {
-    scroll-behavior: smooth;
-}
-
 body {
     margin-top: 1cm;
     margin-bottom: 1cm;
@@ -22,18 +18,31 @@ p{
   margin-right: 2cm;
 }
 
-#navbar{
+
+#navbar {
   overflow: hidden;
-  position: sticky;
+  padding: 90px 10px; 
+  transition: 0.8s; 
+  position: sticky; 
   top: 0;
-  padding: 100px 10px;
-  transition: 0.8s;
+  
   z-index: 99;
 
+  backdrop-filter: blur(5px);
+  background: linear-gradient(
+    to bottom,
+    rgb(96,143,195),
+    transparent 110%
+  );
+  border-radius: 30px;
   display: flex;
-  gap: 1.5cm;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 30%;
+}
+
+.mainPage{
+  padding-top: 120px;
 }
 
 header {
@@ -41,82 +50,18 @@ header {
   position: sticky;
   top: 0;
   height: 100px;
-  background: rgb(96,143,195 / 0.95);
   z-index: 10;
 
   display: flex;
-  align-items: center;
-  padding: 0 1.5cm;
-}
-
-@supports (backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px)) {
-    header {
-        background: rgb(96,143,195 / 0.5);
-    }
-
-    .backdrop {
-        position: absolute;
-        inset: 0;
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
-        background: linear-gradient(
-            to bottom,
-            rgb(96,143,195),
-            transparent 100%
-        );
-        pointer-events: none;
-    }
-
-    .backdrop-edge {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: var(--thickness);
-        background: rgb(96,143,195 / 0.1);
-        -webkit-backdrop-filter: blur(2px) brightness(0.96);
-        backdrop-filter: blur(2px) brightness(0.96);
-        transform: translateY(100%);
-        pointer-events: none;
-    }
-}
-
-@supports (mask-image: none) or (-webkit-mask-image: none) {
-    .backdrop {
-        height: 200%;
-        -webkit-mask-image: linear-gradient(
-            to bottom,
-            grey 0% 50%,
-            transparent 50% 100%
-        );
-        mask-image: linear-gradient(
-            to bottom,
-            grey 0% 50%,
-            transparent 50% 100%
-        );
-    }
-    .backdrop-edge {
-        height: 100%;
-        inset: 0;
-        -webkit-mask-image: linear-gradient(
-            to bottom,
-            grey 0,
-            grey var(--thickness),
-            transparent var(--thickness)
-        );
-        mask-image: linear-gradient(
-            to bottom,
-            grey 0,
-            grey var(--thickness),
-            transparent var(--thickness)
-        );
-    }
+  justify-content: center;
 }
 
 .nav-link {
   color: #fdede4;
   text-decoration: none;
   font-weight: 500;
+  padding-right: 30px;
+  text-align: center;
 }
 
 .nav-link:hover {
