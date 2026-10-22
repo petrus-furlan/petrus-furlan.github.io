@@ -1,13 +1,15 @@
 body {
-    margin: 2cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
     background-color: #fdede4;
     text-align: justify;
 }
 
 ul {
+  text-align: center;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: #608fc3;
 }
