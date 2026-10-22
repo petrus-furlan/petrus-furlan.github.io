@@ -22,47 +22,27 @@ p{
   overflow: hidden;
   position: sticky;
   top: 0;
-  padding: 45px 10px;
+  padding: 100px 10px;
   transition: 0.8s;
   z-index: 99;
-  
-}
 
-ul {
-  text-align: center;
-  line-height: 0.6;
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-}
-
-ul li {
-  float: left;
-}
-
-ul li a {
-  display: block;
-  color: #fdede4;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  background-color: #121619;
+  display: flex;
+  gap: 1.5cm;
+  align-items: center;
+  width: 100%;
 }
 
 header {
   --thickness: 4px;
   position: sticky;
   top: 0;
-  height: 60px;
+  height: 100px;
   background: rgb(96,143,195 / 0.95);
   z-index: 10;
-}
 
-.mainPage {
-  padding-top: 2cm;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5cm;
 }
 
 @supports (backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px)) {
@@ -127,4 +107,15 @@ header {
             transparent var(--thickness)
         );
     }
+}
+
+.nav-link {
+  color: #fdede4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+  color: #121619;
 }
