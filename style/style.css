@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (min-width: 1300px) {
   .header {grid-area: 1 / span 6;}
   .menu {grid-area: 2 / span 1;}
   .content {grid-area: 2 / span 4;}
